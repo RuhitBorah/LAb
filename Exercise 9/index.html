@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #ff6347;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            background-color: #9b59b6;
+        }
+
+        .moving-box {
+            width: 100px;
+            height: 100px;
+            background-color: #2ecc71;
+            border-radius: 10px;
+            animation: moveBox 5s infinite alternate;
+        }
+
+        @keyframes moveBox {
+            0% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateX(300px);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateX(600px);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>CSS Animations & Transitions</h1>
+
+        <div class="box"></div>
+
+        <div class="moving-box"></div>
+    </div>
+
+</body>
+</html>
