@@ -1,0 +1,30 @@
+/* Centering the content using Flexbox */
+body {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Arrange items in a column */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif; /* Default font for the page */
+    background-color: #acfeff; /* Light blue background */
+}
+
+/* Styling the content wrapper */
+.content {
+    text-align: center; /* Center text horizontally */
+}
+
+/* Styling for the heading */
+h1 {
+    color: #333; /* Dark gray for the heading text */
+    margin: 0 0 20px; /* Space below the heading */
+    font-size: 24px; /* Slightly larger heading size */
+}
+
+/* Styling for the paragraph text */
+.box-text {
+    margin-top: 0; /* Remove extra spacing */
+    color: #555; /* Medium gray for the text */
+    font-size: 16px; /* Readable font size for the paragraph */
+}

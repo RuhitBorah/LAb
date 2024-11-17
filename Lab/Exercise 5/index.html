@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Diverse Input Fields</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="process_form.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" minlength="8" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" required>
+
+        <label for="tel">Telephone Number:</label>
+        <input type="tel" id="tel" name="tel" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" step="1" required>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies[]" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="gaming" name="hobbies[]" value="gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" id="coding" name="hobbies[]" value="coding">
+        <label for="coding">Coding</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter your message"></textarea>
+
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
